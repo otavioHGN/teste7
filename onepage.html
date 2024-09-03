@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoMax</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Fira+Sans:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+
+
+    <!-- PROGRAMÇÃO - com JavaScript -->
+    <!-- escrever o texto dentro das "texto" 
+    alert("Olá, mundo!") 
+
+    escrever algo no documento, além do que já tem escrito no próprio documento
+        document.write("Boa Tarde!")
+
+        document.write(2000*4000)
+
+        document.write(2+2)
+
+        variavel (var) no JS
+        var idade = 30
+        document.write(idade*2)
+
+        Caixa com botão que pergunta a idade 
+        var idade = prompt ("digite sua idade")
+        if (idade >=18){
+        document.write("Você pode tirar habilitação"){
+        } else {document.write("você não pode tirar a habilitação")}
+    } -->
+
+
+
+    <!-- BX Slider -->
+    
+    <script>
+      $(document).ready(function(){
+        $(".slider").bxSlider();
+      });
+    </script>
+     
+</head>
+<body>
+    <!-- menu -->
+    <header>
+        <nav>
+            <a href="#" class="logo">FotoMax</a>
+           
+            <ul>
+             <li><a href="#sobre">Sobre</a></li>
+             <li><a href="#galeria">Galeria</a></li>
+             <li><a href="#album">Álbuns</a></li>
+             <li><a href="#contato">Contatos</a></li>
+             <li><a href="#" class="botaoinicio">Início</a></li>
+           </ul> 
+        </nav>
+    </header>
+    
+   <!-- conteúdos -->
+   <main>
+    <section id="início">
+        <div>
+           <h1>Fotografias profissionais <br> conheça nosso trabalho</h1>
+           <p>
+            <a href="#" class="botaosaibamais">Saiba mais</a>
+        </p>
+        
+        <!-- slide de fotos -->
+        <!-- foi criado uma seção para o HTML enterder que o conteúdo do slider seja colocado na camada de trás do menu -->
+        <section id="slider">
+        <div class="slider">
+            <div><img src="imagens/slide01.png" alt=""></div>
+            <div><img src="imagens/slide02.png" alt=""></div>
+            <div><img src="imagens/slide03.png" alt=""></div>
+        </div> 
+        </section>
+        
+        </div>        
+    </section>
+
+    <section id="sobre">
+          <h2>Sobre nossa história</h2> 
+        <div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolores corporis? Animi, officia ullam? Hic architecto, tempora esse est magni sit voluptate minima ipsa facilis neque ullam, animi, magnam qui?
+           Sit nemo est atque eos sunt deserunt doloremque quisquam laudantium accusantium necessitatibus, officia repudiandae tempore assumenda accusamus minus molestiae ullam. Dignissimos quam provident corporis ducimus, voluptas facilis labore magnam suscipit.
+           Corrupti, sapiente odio ducimus aperiam debitis commodi esse numquam dicta, exercitationem voluptatibus quos voluptatum nostrum! Mollitia facilis laborum enim et minus aspernatur, soluta quo distinctio quidem aut commodi, neque quaerat.
+           </p>  
+
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores corrupti possimus esse voluptatem alias, ut provident dolores quo illo perferendis, quidem perspiciatis soluta! Perspiciatis, ad dicta eveniet excepturi soluta eum.
+           Incidunt, ipsa distinctio qui deleniti quae placeat culpa praesentium ullam similique corrupti nemo error sint eos dolorem natus nam voluptate dolore veritatis, porro nesciunt suscipit perspiciatis, minima quaerat. Nobis, dolorem!
+           Totam dolor optio beatae dignissimos, maiores, cum eius ipsa voluptate autem magnam neque ipsum iste deleniti inventore voluptas, ea asperiores molestiae facilis perspiciatis! Delectus assumenda vero cupiditate recusandae nisi ut.
+           </p>
+        </div>   
+    </section>
+  
+    <section id="galeria">
+        <!-- com a div em cada foto, as fotos vão ficar empilhadas e o código vai entender, cada foto, como conteúdo único-->
+        <div>
+         <h2>Galeria</h2>
+         
+         <div class="fotos">
+            <div class="fotomaior">
+               <img src="imagens/galeria_maior.png" alt="">
+            </div>    
+
+            <div class="fotosmenores">
+               <div>
+                <img src="imagens/galeria_01.png" alt="">
+               </div>
+               
+               <div>
+                <img src="imagens/galeria_02.png" alt="">
+               </div>
+               
+               <div>
+                <img src="imagens/galeria_03.png" alt="">
+               </div>
+              
+               <div>
+                <img src="imagens/galeria_01.png" alt=""> 
+               </div>
+            </div>
+    </section>
+
+    <section id="album">
+        <h2>Álbum</h2>
+        
+        <div class="album">
+            <div>
+                <img src="imagens/album 1.png" alt=""> 
+            </div>
+            <div class="textoalbum">
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, quaerat! Ipsam nihil vitae molestias illo ratione esse fuga dolore, quaerat aliquid explicabo accusamus beatae quas dolorum dolor iure, corrupti at.
+                Quod, error odit beatae quam illum, fugiat unde fugit, deleniti molestias qui officiis ex sapiente optio vitae velit magnam aspernatur rerum architecto! Aut temporibus architecto deleniti ratione voluptate consectetur incidunt.
+                Suscipit, nulla! Aut dicta fuga totam perspiciatis cum commodi.  
+                </p>
+            </div>       
+        </div> 
+    </section>
+   </main>
+ 
+   <!-- rodapé -->
+   <footer id="rodape">
+        <section id="contato">
+            <div class="textocontato">
+                <h2>Contato</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis officiis harum aspernatur reiciendis totam beatae distinctio consectetur? Nemo vero officiis necessitatibus ut quos soluta blanditiis, enim itaque dicta et?
+         Sequi at maxime incidunt saepe molestiae corporis a obcaecati beatae voluptates, aliquam ratione sapiente vero in quam iste rem vel tempore tenetur cumque culpa? Distinctio unde modi ducimus possimus quisquam?
+                 Repellendus maxime amet modi molestias doloribus explicabo asperiores sapiente dolore harum recusandae voluptates, expedita laboriosam ea libero ad accusantium fuga quam quidem error? Sint placeat optio, quia nihil ad sit.</p>
+            </div>
+
+            <div class="formulariocontato">
+                <form>
+                    <!--a tag p esta sendo usada para deixar a caixa de texto embaixo do titulo-->
+                    <p><label for="email">E-mail</label></p>
+                    <input type="text" id="email" placeholder="digite seu e-mail">
+            
+                    <p><label for="mensagem">Mensagem</label></p>
+                    <textarea id="mensagem"></textarea>
+                    <br>
+
+                    <a href="#" class="botaoform">Enviar</a>
+                </form>
+            </div>
+        </section>
+   </footer>
+</body>
+</html>

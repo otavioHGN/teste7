@@ -1,0 +1,294 @@
+*{ 
+/* gruda o conteudo no cantinho e tira a formatação padrão */
+   margin: 0;
+   padding: 0;
+}
+
+/* textos */
+h1{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    color: red;
+    text-align: center;
+    
+    /* espaço do titulo entre menu e botao */
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+h2{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #646060;
+    
+    /* linha abaixo de cada título */
+    text-decoration: underline;
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #646060;
+}
+
+
+
+
+/* Menu principal  */
+/* caixinha menu */
+header{ height: 100px;  }
+
+ul{
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/* links da nav - menu */
+/* a nav esta agrupando a logo e os links do menu*/
+nav{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+
+    /* centralizou a logo e os links no meio do header */
+    height: 100px;
+
+    /* fixar o menu */
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid black;
+    
+    /* oque for positivo ficar na frente
+    foi colocado, para que o menu fique a frente das imagens*/
+    z-index: 1;
+}
+
+nav a{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+
+/* logo */
+.logo{
+    margin-left: 50px;
+    text-decoration: underline;
+}
+
+.botaoinicio{
+    color: white;
+    background-color: black;
+    
+    padding-top: 37px;
+    padding-bottom: 37px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+/* seção início - conteúdo 1*/
+/* centralizar o botão */
+#início{
+    text-align: center;
+    padding-top: 100px;
+    
+
+    /* centralizando o slider */
+    width: 1024px;
+    margin: auto;
+}
+
+/* alinhou o texto dentro do elemento */
+#início p{
+    margin-bottom: 80px;
+}
+
+.botaosaibamais{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    
+    /* caixinha botão - medidas*/
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+}
+
+
+
+/* seção - galeria */
+#galeria{
+    width: 1024px;
+    margin: auto;
+
+    padding-top: 125px;
+}
+
+#galeria h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.fotos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fotomaior{
+    margin-right: 50px;
+}
+
+.fotosmenores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fotosmenores div{
+    margin-bottom: 50px;
+}
+
+
+/* seção - sobre nossa história */
+#sobre{
+        width: 1024px;
+        margin: auto;
+        display:flex;
+        justify-content: space-between;
+
+        margin-top:80px;
+        margin-bottom: 80px;
+
+        padding-top: 125px;
+    }
+
+#sobre div{
+    width: 500px;
+}
+
+
+
+/* seção álbum */
+#album{ 
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    padding-top: 125px;
+}
+
+#album h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.album{
+    width: 1024px;
+    height: 333px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.textoalbum{
+    background-color: rgba(196, 196, 196, 1);
+    ;
+
+    padding: 60px;
+}
+
+
+
+
+/* seção Footer - Rodapé */
+
+footer{
+    background-color: #343333;
+}
+
+footer h2{
+    color: rgba(189, 186, 186, 1);
+    ;
+}
+
+footer p{
+    color: rgba(189, 186, 186, 1);
+}
+
+#contato{
+    display: flex;
+    justify-content: space-between;
+
+    /* botão - para não deixar o botão encostado na caixa de texto */
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    width: 1024px;
+    margin: auto;
+}
+
+
+
+.textocontato{
+    width: 400px;
+}
+
+input{
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:  rgba(189, 186, 186, 1);
+
+    margin-bottom: 20px;
+}
+
+textarea{
+    width: 350px;
+    height: 140px;
+    border-radius: 10px;
+    background-color:  rgba(189, 186, 186, 1);
+  
+    margin-bottom: 20px;
+}
+
+
+.botaoform{
+    background-color: rgba(189, 186, 186, 1);
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 20px;
+}
+
+
+/* slider */
+#slider div{
+    /* oque for negativo ficar atrás 
+    foi colocado, para que as imagens fiquem atrás do menu*/
+   z-index: -0;
+}
